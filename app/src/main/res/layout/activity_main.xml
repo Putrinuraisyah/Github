@@ -9,7 +9,14 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Putri !"
+        android:text="
+1. Putri Nur Aisyah - 09031381924140
+
+2. Dwi Ilmi Kayana - 09031381924102
+
+3. Indah Kurniasari - 09031381924120
+
+4. Saidah Samiyah - 09031381924092!"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
