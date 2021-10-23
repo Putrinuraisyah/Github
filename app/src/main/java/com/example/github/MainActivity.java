@@ -9,6 +9,7 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        // This is a comment
         super.onCreate(savedInstanceState);
         setContentView(R.layout.fragment_tab_fragment1);
         setContentView(R.layout.activity_main);
