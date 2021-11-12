@@ -6,7 +6,6 @@ import android.support.v4.app.FragmentStatePagerAdapter;
 
 import com.example.github.Fragment.TabFragment1;
 import com.example.github.Fragment.TabFragment2;
-import com.example.github.Fragment.TabFragment3;
 
 public class PagerAdapter extends FragmentStatePagerAdapter {
     int mNumOfTabs;
@@ -21,7 +20,6 @@ public class PagerAdapter extends FragmentStatePagerAdapter {
         switch (i){
             case 0: return new TabFragment1();
             case 1: return new TabFragment2();
-            case 2: return new TabFragment3();
             default: return null;
         }
     }
