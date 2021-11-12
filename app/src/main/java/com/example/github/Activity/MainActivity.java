@@ -1,9 +1,12 @@
-package com.example.github;
+package com.example.github.Activity;
 
 import android.os.Bundle;
 import android.support.design.widget.TabLayout;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
+
+import com.example.github.PagerAdapter;
+import com.example.github.R;
 
 public class MainActivity extends AppCompatActivity {
 //update

@@ -6,6 +6,8 @@ import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
 import android.view.Window;
 
+import com.example.github.Activity.MainActivity;
+
 public class SplashScreen extends AppCompatActivity {
  //Tampilan Awal
     @Override

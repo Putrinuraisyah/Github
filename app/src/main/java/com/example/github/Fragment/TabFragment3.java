@@ -1,4 +1,4 @@
-package com.example.github;
+package com.example.github.Fragment;
 
 
 import android.os.Bundle;
@@ -7,14 +7,16 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.example.github.R;
+
 
 /**
  * A simple {@link Fragment} subclass.
  */
-public class TabFragment2 extends Fragment {
+public class TabFragment3 extends Fragment {
 
 
-    public TabFragment2() {
+    public TabFragment3() {
         // Required empty public constructor
     }
 
@@ -23,7 +25,7 @@ public class TabFragment2 extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_tab_fragment2, container, false);
+        return inflater.inflate(R.layout.fragment_tab_fragment3, container, false);
     }
 
 }

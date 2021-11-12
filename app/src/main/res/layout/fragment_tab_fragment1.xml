@@ -1,163 +1,40 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="5dp"
     android:background="#C4C4C4"
-    tools:context=".TabFragment1">
+    tools:context=".Fragment.TabFragment1">
 
-    <ScrollView
+    <TextView
+        android:id="@+id/PopularMovies"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="5dp"
+        android:textColor="@android:color/white"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        tools:ignore="MissingConstraints" />
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
-
-            <TableLayout
-                android:layout_width="434dp"
-                android:layout_height="match_parent">
-
-                <TableRow
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="horizontal">
-
-                    <ImageView
-                        android:id="@+id/imageView7"
-                        android:layout_width="100dp"
-                        android:layout_height="150dp"
-                        android:layout_marginTop="10dp"
-                        android:onClick="imageView7"
-                        android:src="@drawable/img_20" />
-
-                    <ImageView
-                        android:id="@+id/imageView8"
-                        android:layout_width="100dp"
-                        android:layout_height="150dp"
-                        android:layout_marginTop="10dp"
-                        android:src="@drawable/img_21" />
-
-                    <ImageView
-                        android:id="@+id/imageView9"
-                        android:layout_width="100dp"
-                        android:layout_height="150dp"
-                        android:layout_marginTop="10dp"
-                        android:src="@drawable/img_22" />
-                </TableRow>
-
-                <TableRow
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="horizontal">
-
-                    <ImageView
-                        android:id="@+id/imageView10"
-                        android:layout_width="120dp"
-                        android:layout_height="150dp"
-                        android:layout_marginTop="10dp"
-                        android:src="@drawable/img_23" />
-
-                    <ImageView
-                        android:id="@+id/imageView11"
-                        android:layout_width="100dp"
-                        android:layout_height="150dp"
-                        android:layout_marginTop="10dp"
-                        android:src="@drawable/img_24" />
-
-                    <ImageView
-                        android:id="@+id/imageView12"
-                        android:layout_width="100dp"
-                        android:layout_height="150dp"
-                        android:layout_marginTop="10dp"
-                        android:src="@drawable/img_25" />
-                </TableRow>
-
-                <TableRow
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="horizontal">
-
-                    <ImageView
-                        android:id="@+id/imageView13"
-                        android:layout_width="100dp"
-                        android:layout_height="150dp"
-                        android:layout_marginTop="10dp"
-                        android:src="@drawable/img_7" />
-
-                    <ImageView
-                        android:id="@+id/imageView14"
-                        android:layout_width="100dp"
-                        android:layout_height="150dp"
-                        android:layout_marginTop="10dp"
-                        android:src="@drawable/img_8" />
-
-                    <ImageView
-                        android:id="@+id/imageView15"
-                        android:layout_width="100dp"
-                        android:layout_height="150dp"
-                        android:layout_marginTop="10dp"
-                        android:src="@drawable/img_1" />
-                </TableRow>
-
-                <TableRow
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="horizontal">
-
-                    <ImageView
-                        android:id="@+id/imageView16"
-                        android:layout_width="100dp"
-                        android:layout_height="150dp"
-                        android:layout_marginTop="10dp"
-                        android:src="@drawable/img" />
-
-                    <ImageView
-                        android:id="@+id/imageView17"
-                        android:layout_width="100dp"
-                        android:layout_height="150dp"
-                        android:layout_marginTop="10dp"
-                        android:src="@drawable/img_4" />
-
-                    <ImageView
-                        android:id="@+id/imageView18"
-                        android:layout_width="100dp"
-                        android:layout_height="150dp"
-                        android:layout_marginTop="10dp"
-                        android:src="@drawable/img_2" />
-                </TableRow>
-
-                <TableRow
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="horizontal">
-
-                    <ImageView
-                        android:id="@+id/imageView19"
-                        android:layout_width="100dp"
-                        android:layout_height="150dp"
-                        android:layout_marginTop="10dp"
-                        android:src="@drawable/img_5" />
-
-                    <ImageView
-                        android:id="@+id/imageView20"
-                        android:layout_width="100dp"
-                        android:layout_height="150dp"
-                        android:layout_marginTop="10dp"
-                        android:src="@drawable/img_7" />
-
-                    <ImageView
-                        android:id="@+id/imageView21"
-                        android:layout_width="100dp"
-                        android:layout_height="150dp"
-                        android:layout_marginTop="10dp"
-                        android:src="@drawable/img_8" />
-                </TableRow>
-            </TableLayout>
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rvPopularMovies"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/PopularMovies"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="10dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentLeft="true"
+        tools:ignore="MissingConstraints" />
 
 
-        </LinearLayout>
-    </ScrollView>
-</RelativeLayout>
+</android.support.constraint.ConstraintLayout>
