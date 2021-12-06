@@ -5,7 +5,7 @@
     android:id="@+id/activity_main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#C4C4C4"
+    android:background="#FFFFFF"
     android:padding="16dp"
     tools:context=".Activity.MainActivity">
 
@@ -33,7 +33,7 @@
         android:layout_width="match_parent"
         android:layout_height="fill_parent"
         android:layout_below="@id/tab_layout"
-        android:background="#C4C4C4" />
+        android:background="#FFFFFF" />
 
     <ImageView
         android:id="@+id/imageView2"
