@@ -17,7 +17,11 @@
             android:exported="true" />
         <activity
             android:name=".Activity.DetailActivity"
-            android:exported="true" />
+            android:exported="true"
+            android:parentActivityName=".Activity.MainActivity">
+        <meta-data android:name="android.support.PARENT_ACTIVITY"
+            android:value=".Activity.MainActivity"/>
+        </activity>
         <activity
             android:name=".SplashScreen"
             android:exported="true">
