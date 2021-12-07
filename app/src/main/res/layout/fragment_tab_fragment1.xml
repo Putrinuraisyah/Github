@@ -8,7 +8,7 @@
     android:padding="5dp"
     android:background="#C4C4C4"
     tools:context=".Fragment.TabFragment1">
-
+//penambahan fitur back
     <TextView
         android:id="@+id/PopularMovies"
         android:layout_width="wrap_content"
