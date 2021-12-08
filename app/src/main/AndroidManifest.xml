@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     package="com.example.github">
 
     <uses-permission android:name="android.permission.INTERNET"/>
@@ -13,8 +14,19 @@
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true">
         <activity
-            android:name=".Activity.DetailActivity2"
+            android:name=".sqlite.AddActivity"
+            android:label="Add Review"
+            android:parentActivityName=".sqlite.TabFragment2"
             android:exported="true" />
+        <activity
+            android:name=".Activity.DetailActivity2"
+            android:theme="@style/AppTheme"
+            android:label="About"
+            android:exported="true" />
+        <activity
+            android:name=".sqlite.TabFragment2"
+            android:exported="true"
+            tools:ignore="Instantiatable" />
         <activity
             android:name=".Activity.DetailActivity"
             android:exported="true"
