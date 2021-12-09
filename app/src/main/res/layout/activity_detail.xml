@@ -16,7 +16,6 @@
       app:srcCompat="@drawable/ic_launcher_background" />
 
 
-
   <TextView
       android:id="@+id/detailMovieTitle"
       android:layout_width="250dp"
@@ -27,29 +26,9 @@
       android:layout_marginRight="10dp"
       android:padding="5dp"
       android:text="TextView"
-      android:textStyle="bold"
-      android:textColor="@android:color/white"
-      android:textSize="18sp"/>
-
-  <ImageView
-      android:id="@+id/imageView7"
-      android:layout_width="380dp"
-      android:layout_height="wrap_content"
-      android:layout_marginLeft="15dp"
-      android:layout_marginTop="300dp"
-      android:layout_marginRight="15dp"
-      app:srcCompat="@drawable/img_9" />
-
-  <TextView
-      android:id="@+id/detailMovieOverView"
-      android:layout_width="wrap_content"
-      android:layout_height="wrap_content"
-      android:layout_marginLeft="20dp"
-      android:layout_marginTop="400dp"
-      android:layout_marginRight="20dp"
-      android:lineSpacingExtra="3dp"
-      android:text="TextView"
-      android:textColor="@android:color/darker_gray" />
+      android:textColor="#000000"
+      android:textSize="18sp"
+      android:textStyle="bold" />
 
   <TextView
       android:id="@+id/detailMovieLanguage"
@@ -59,7 +38,7 @@
       android:layout_marginLeft="75dp"
       android:layout_marginTop="18dp"
       android:text="Text View"
-      android:textColor="@android:color/white"
+      android:textColor="@color/colorPrimaryDark"
       android:textStyle="italic" />
 
   <TextView
@@ -69,7 +48,7 @@
       android:layout_marginLeft="20dp"
       android:layout_marginTop="18dp"
       android:text="Subtitle :"
-      android:textColor="#FFFFFF"
+      android:textColor="#000000"
       android:textSize="12sp"
       android:textStyle="italic" />
 
@@ -81,18 +60,45 @@
       android:layout_marginLeft="77dp"
       android:layout_marginTop="18dp"
       android:text="Text View"
-      android:textColor="@android:color/white"
+      android:textColor="@color/colorPrimaryDark"
       android:textStyle="italic" />
 
   <TextView
+      android:id="@+id/release"
       android:layout_width="wrap_content"
       android:layout_height="wrap_content"
       android:layout_below="@+id/detailMovieLanguage"
       android:layout_marginLeft="20dp"
-      android:layout_marginTop="17dp"
+      android:layout_marginTop="18dp"
       android:text="Release :"
-      android:textColor="@android:color/white"
+      android:textColor="#000000"
+      android:textSize="12sp"
       android:textStyle="italic" />
+
+  <LinearLayout
+      android:layout_width="370dp"
+      android:layout_height="347dp"
+      android:layout_below="@+id/release"
+      android:layout_alignParentStart="true"
+      android:layout_alignParentEnd="true"
+      android:layout_marginStart="18dp"
+      android:layout_marginTop="26dp"
+      android:layout_marginEnd="24dp"
+      android:background="@color/colorPrimary"
+      android:orientation="vertical"
+      android:padding="10dp">
+
+    <TextView
+        android:id="@+id/detailMovieOverView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginRight="5dp"
+        android:lineSpacingExtra="3dp"
+        android:text="TextView"
+        android:textColor="@color/colorAccent" />
+  </LinearLayout>
 
 
 </RelativeLayout>
